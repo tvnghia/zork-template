@@ -1,0 +1,27 @@
+@mixin centered($horizontal, $vertical) {
+  position: absolute;
+  left: $horizontal;
+  top: $vertical;
+  transform: translate(-$horizontal, -$vertical);
+}
+
+@mixin flexbox($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin img-background () {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin position($position) {
+  position: $position;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}

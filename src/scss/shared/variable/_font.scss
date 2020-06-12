@@ -1,0 +1,23 @@
+// Font family
+$base-font-family: "Montserrat";
+$fallback-font-family: "Helvetica Neue", sans-serif !default;
+$body-font-family: $base-font-family, $fallback-font-family !default;
+
+// Font size - line height
+$font-size-base: 15px !default;
+$font-size-xl: 32px !default;
+$font-size-lg: 24px !default;
+$font-size-md: 20px !default;
+$font-size-sm: 14px !default;
+$line-height-base: 1.8 !default;
+$line-height-sm: 1.25 !default;
+$line-height-xs: 1.2 !default;
+$line-height-zero: 1 !default;
+$body-font-size: $font-size-base !default;
+$body-line-height: $line-height-base !default;
+
+// // Font weight
+$font-weight-normal: 400 !default;
+$font-weight-light-bold: 500 !default;
+$font-weight-bold: 700 !default;
+$body-font-weight: $font-weight-normal !default;

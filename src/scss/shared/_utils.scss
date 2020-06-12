@@ -1,0 +1,57 @@
+.u-text-md {
+  font-size: $font-size-md;
+}
+
+.u-text-lg {
+  font-size: $font-size-lg;
+}
+
+.u-ptb-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.u-centered {
+  @include flexbox(center, center);
+}
+
+.u-text-centered {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-transition-opacity {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.u-d-block {
+  display: block;
+}
+
+.u-mr-5 {
+  margin-right: 5px;
+}
+
+.u-mtb-15 {
+  margin: 15px 0;
+}
+
+.u-mt-15 {
+  margin-top: 15px;
+}
+
+.u-mb-10 {
+  margin-bottom: 10px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-leter-space {
+  letter-spacing: 10px;
+}

@@ -1,0 +1,29 @@
+@mixin mediaquery--not-lg() {
+  @media (max-width: $sreen-pc - 1) {
+    @content
+  }
+}
+
+@mixin mediaquery--lg() {
+  @media (min-width: $sreen-pc) {
+    @content
+  }
+}
+
+@mixin mediaquery--md() {
+  @media (max-width: $sreen-tablet) {
+    @content
+  }
+}
+
+@mixin mediaquery--sm() {
+  @media (max-width: $sreen-mobile - 1) {
+    @content
+  }
+}
+
+@mixin mediaquery--not--sm() {
+  @media (min-width: $sreen-mobile - 1) {
+    @content
+  }
+}
