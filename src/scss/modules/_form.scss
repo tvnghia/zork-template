@@ -1,0 +1,15 @@
+.form {
+  margin-top: 10px;
+
+  &__group {
+    margin-bottom: 10px;
+  }
+
+  &__control {
+    width: 50%;
+    padding: 10px;
+    line-height: $line-height-sm;
+    border: 1px solid $gray-color;
+    border-radius: 20px;
+  }
+}

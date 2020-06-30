@@ -1,0 +1,50 @@
+.link {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    color: #c97178;
+  }
+
+  &--danger {
+    color: $danger-color;
+  }
+
+  &--light {
+    color: #FFFFFF;
+  }
+
+  &--dark {
+    color: $dark-color;
+
+    &:hover {
+      color: $danger-color;
+
+      .link__menu:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--sm {
+    font-size: 12px;
+  }
+
+  &__menu {
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 0%;
+      position: absolute;
+      margin: auto;
+      border-bottom: solid 1px #c97178!important;
+      height: 1px;
+      top: 100%;
+      left: 0;
+      right: 0;
+      transition: all .5s;
+      margin-top: 3px;
+    }
+  }
+}

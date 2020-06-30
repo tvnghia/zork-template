@@ -1,0 +1,20 @@
+.headline {
+  line-height: 1.25;
+  color: #25292C;
+
+  &--xl {
+    font-size: 40px;
+  }
+
+  &--lg {
+    font-size: 26px;
+  }
+
+  &--xs {
+    font-size: 13px;
+  }
+
+  &--gray {
+    color: gray;
+  }
+}

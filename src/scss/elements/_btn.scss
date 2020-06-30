@@ -1,0 +1,59 @@
+.btn,
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-zero;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: all 0.3s ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &--link {
+    background-color: transparent;
+    color: #C97178;
+  }
+
+  &--primary {
+    background-color: #EEEEEE;
+  }
+
+  &--white {
+    background-color: white;
+
+    &:hover {
+      background-color: #C97178;
+    }
+  }
+
+  &--radius {
+    border-radius: 20px;
+  }
+
+  &--lg {
+    padding: 10px 25px;
+  }
+
+  &--md {
+    padding: 5px 15px;
+  }
+
+  &--danger {
+    background-color: #C97178;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: #EEEEEE;
+    }
+  }
+}

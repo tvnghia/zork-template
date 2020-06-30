@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 300px;
+
+  &--md {
+    min-height: 600px;
+  }
+
+  &__content {
+    @include centered(50%,50%);
+  }
+}

@@ -1,0 +1,24 @@
+.image {
+  overflow: hidden;
+
+  &__item {
+    display: block;
+    width: 100%;
+    transition: all .5s;
+
+    &:hover {
+      transform: scale(1.2);
+      opacity: .8;
+    }
+  }
+
+  &__branch {
+    & > div {
+      width: 20%;
+
+      @include mediaquery--sm() {
+        width: 100%;
+      }
+    }
+  }
+}

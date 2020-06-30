@@ -1,0 +1,52 @@
+.modal {
+  @include position(fixed);
+  display: none;
+  padding: 20px;
+  z-index: 1000;
+  opacity: 0.95;
+
+  &:before {
+    @include position(absolute);
+    content: "";
+    display: block;
+    background: $dark-color;
+    z-index: -1;
+  }
+
+  &.is-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 1000px;
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: 3px solid Green;
+  }
+
+  &__search {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    right: 11px;
+    top: 9px;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    line-height: $line-height-sm;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
