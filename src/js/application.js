@@ -1,12 +1,17 @@
-import * as Function from './function'
+import * as Cart from './Cart'
+import * as MenuMobile from './MenuMobile'
+import * as SlideImages from './SlideShowImageList'
+import * as Header from './Header'
 
 window.addEventListener('DOMContentLoaded', function () {
-  Function.toggleCollapseMenu()
-  Function.toggleSubMenu()
-  Function.showSlides()
-  Function.scrollPage()
-  Function.searchBar()
-  Function.closeModal()
-  Function.countCart()
-  Function.removeProduct()
+  MenuMobile.toggleCollapseMenu()
+  MenuMobile.toggleSubMenu()
+
+  SlideImages.showSlides()
+  Header.scrollPage()
+  Header.searchBar()
+  Header.closeModal()
+
+  Cart.handleCart()
+  Cart.removeProduct()
 })

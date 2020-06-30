@@ -1,81 +1,3 @@
-// Buton Menu collapse in mobile device
-export const toggleCollapseMenu = () => {
-  const btnCollapse = document.querySelector('.js-collapse')
-  const menu = document.querySelector('.js-menu')
-  if (!menu || !btnCollapse) return
-
-  btnCollapse.addEventListener('click', () => {
-    btnCollapse.classList.toggle('is-active')
-    menu.classList.toggle('is-active')
-  })
-}
-
-// toggle submenu
-export const toggleSubMenu = () => {
-  const subMenu = [...document.querySelectorAll('.js-menu-item')]
-  if (!subMenu.length) return
-
-  subMenu.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('is-active')
-    })
-  })
-}
-
-// Slide auto show image
-let init = 0
-export const showSlides = () => {
-  const slides = [...document.querySelectorAll('.mySlides')]
-  const dots = [...document.querySelectorAll('.slideshow__dot')]
-
-  slides.forEach(item => {
-    item.style.display = 'none'
-  })
-
-  init++
-
-  init > slides.length && (init = 1)
-
-  dots.forEach(dot => {
-    dot.classList.remove('active')
-  })
-
-  slides[init - 1].style.display = 'block'
-  dots[init - 1].classList.add('active')
-  setTimeout(showSlides, 2000)
-}
-
-// Scroll page
-export const scrollPage = () => {
-  window.onscroll = () => {
-    const header = document.querySelector('.js-header')
-    if (!header) return
-
-    window.pageYOffset >= 150 ? header.classList.add('is-active') : header.classList.remove('is-active')
-  }
-}
-
-// Search icon bar
-export const searchBar = () => {
-  const searchIcon = document.querySelector('.js-search-icon')
-  const modal = document.querySelector('.js-modal')
-  if (!searchIcon && !modal) return
-
-  searchIcon.addEventListener('click', () => {
-    modal.classList.add('is-active')
-  })
-}
-
-// Close modal search
-export const closeModal = () => {
-  const modal = document.querySelector('.js-modal')
-  if (!modal) return
-
-  modal.addEventListener('click', e => {
-    e.target === modal && modal.classList.remove('is-active')
-  })
-}
-
 const changeBtnAddToCart = (btn) => {
   btn.innerHTML = 'View Cart'
   btn.disabled = true
@@ -113,7 +35,7 @@ const countPrice = () => {
   totalPrice.innerHTML = `SUBTOTAL: ${price}d`
 }
 
-export const countCart = () => {
+export const handleCart = () => {
   const cardItem = [...document.querySelectorAll('.js-card-item')]
   const counter = document.querySelector('.js-counter')
   if (!cardItem.length || !counter) return
