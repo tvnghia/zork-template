@@ -3,7 +3,8 @@
     cursor: pointer;
 
     &:hover {
-      .card__icon {
+      .card__icon,
+      .img-back {
         opacity: 1;
       }
 
@@ -11,18 +12,11 @@
         background-color: $danger-color;
       }
 
-      .img-back {
-        opacity: 1;
-      }
-
       .img-front {
         opacity: 0;
       }
 
-      .card__icon--left {
-        transform: translateX(0px);
-      }
-
+      .card__icon--left,
       .card__icon--right {
         transform: translateX(0px);
       }
@@ -33,11 +27,7 @@
     position: relative;
 
     .img-back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      @include position(absolute);
       opacity: 0;
       transition: all 2s;
     }
@@ -70,18 +60,20 @@
       @include centered(50%, 50%);
     }
 
-    &--left {
+    &--left,
+    &--right {
       position: absolute;
-      transform: translateX(-5px);
       transition: all .5s;
     }
 
+    &--left {
+      transform: translateX(-5px);
+    }
+
     &--right {
-      position: absolute;
       top: 0;
       right: 0;
       transform: translateX(5px);
-      transition: all .5s;
     }
   }
 
