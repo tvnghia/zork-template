@@ -11,14 +11,14 @@
       opacity: .8;
     }
   }
+}
 
+.images {
   &__branch {
-    & > div {
-      width: 20%;
+    width: 20%;
 
-      @include mediaquery--sm() {
-        width: 100%;
-      }
+    @include mediaquery--sm() {
+      width: 100%;
     }
   }
 }

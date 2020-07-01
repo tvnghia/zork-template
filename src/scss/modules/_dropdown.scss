@@ -65,7 +65,7 @@
     transition: all .5s ease-in-out;
 
     &--dark {
-      background-color: #222222;
+      background-color: $light-dark-color;
     }
 
     &--md {
@@ -73,7 +73,8 @@
     }
 
     &--lg {
-      width: 100%;
+      width: 300px;
+      left: -350px;
     }
 
     &--horizontal {

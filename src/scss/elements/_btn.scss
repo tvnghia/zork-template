@@ -21,18 +21,18 @@
 
   &--link {
     background-color: transparent;
-    color: #C97178;
+    color: $danger-color;
   }
 
   &--primary {
-    background-color: #EEEEEE;
+    background-color: $light-gray-color;
   }
 
   &--white {
-    background-color: white;
+    background-color: $light-color;
 
     &:hover {
-      background-color: #C97178;
+      background-color: $danger-color;
     }
   }
 
@@ -49,11 +49,10 @@
   }
 
   &--danger {
-    background-color: #C97178;
-    border-radius: 20px;
+    background-color: $danger-color;
 
     &:hover {
-      background-color: #EEEEEE;
+      background-color: $light-gray-color;
     }
   }
 }

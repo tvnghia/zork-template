@@ -3,7 +3,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  color: #FFFFFF;
+  color: $light-color;
   display: none;
   position: relative;
 
@@ -24,7 +24,7 @@
     &-item {
       padding: 10px 20px;
       font-size: 14px;
-      border-bottom: solid 1px #333;
+      border-bottom: solid 1px $dark-color;
       position: relative;
     }
   }
@@ -40,7 +40,7 @@
       position: absolute;
       height: 2px;
       width: 70%;
-      background: #fff;
+      background: $light-color;
       margin: auto;
       top: 0;
       left: 0;
@@ -53,7 +53,7 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background: #fff;
+        background: $light-color;
         margin: auto;
         top: 7px;
         left: 0;
@@ -68,7 +68,7 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background: #fff;
+        background: $light-color;
         margin: auto;
         top: -7px;
         left: 0;

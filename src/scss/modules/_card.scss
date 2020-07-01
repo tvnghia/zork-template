@@ -1,13 +1,4 @@
 .card {
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-
-  @include mediaquery--not-lg() {
-    padding-left: $col-gutter;
-    padding-right: $col-gutter;
-  }
-
   &__item {
     cursor: pointer;
 
@@ -17,23 +8,23 @@
       }
 
       .card__btn {
-        background-color: #C97178;
+        background-color: $danger-color;
       }
 
-      .img2 {
+      .img-back {
         opacity: 1;
       }
 
-      .img1 {
+      .img-front {
         opacity: 0;
       }
 
       .card__icon--left {
-        transform: translateX(10px);
+        transform: translateX(0px);
       }
 
       .card__icon--right {
-        transform: translateX(-10px);
+        transform: translateX(0px);
       }
     }
   }
@@ -41,7 +32,7 @@
   &__image {
     position: relative;
 
-    .img2 {
+    .img-back {
       position: absolute;
       top: 0;
       left: 0;
@@ -60,11 +51,11 @@
     z-index: 20;
 
     &--round {
-      width: 36px;
-      height: 36px;
-      line-height: 36px;
-      background: #c97178;
-      color: #fff;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background: $danger-color;
+      color: $light-color;
       border-radius: 100%;
     }
   }
@@ -81,7 +72,7 @@
 
     &--left {
       position: absolute;
-      transform: translateX(-20px);
+      transform: translateX(-5px);
       transition: all .5s;
     }
 
@@ -89,7 +80,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      transform: translateX(20px);
+      transform: translateX(5px);
       transition: all .5s;
     }
   }
@@ -122,11 +113,11 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background: orange;
+    background: $orange-color;
     right: 7px;
     top: 34px;
     border-radius: 100%;
-    color: whitesmoke;
+    color: $light-gray-color;
     line-height: 20px;
   }
 }

@@ -8,6 +8,10 @@
     width: 100%;
   }
 
+  &--md {
+    width: 700px;
+  }
+
   @include mediaquery--not-lg() {
     padding-left: $col-gutter;
     padding-right: $col-gutter;

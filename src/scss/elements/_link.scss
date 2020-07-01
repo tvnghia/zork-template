@@ -1,9 +1,12 @@
 .link {
   text-decoration: none;
-  color: $primary-color;
 
   &:hover {
-    color: #c97178;
+    color: $danger-color;
+  }
+
+  &--primary {
+    color: $primary-color;
   }
 
   &--danger {
@@ -11,7 +14,7 @@
   }
 
   &--light {
-    color: #FFFFFF;
+    color: $light-color;
   }
 
   &--dark {
@@ -19,10 +22,6 @@
 
     &:hover {
       color: $danger-color;
-
-      .link__menu:after {
-        width: 100%;
-      }
     }
   }
 
@@ -34,17 +33,23 @@
     position: relative;
 
     &:after {
-      content: "";
-      width: 0%;
+      content: '';
       position: absolute;
-      margin: auto;
-      border-bottom: solid 1px #c97178!important;
-      height: 1px;
       top: 100%;
       left: 0;
       right: 0;
+      width: 0%;
+      margin: auto;
+      border-bottom: solid 1px $danger-color;
+      height: 1px;
       transition: all .5s;
       margin-top: 3px;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
     }
   }
 }

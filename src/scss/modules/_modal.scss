@@ -23,12 +23,12 @@
     width: 1000px;
     padding-bottom: 5px;
     position: relative;
-    border-bottom: 3px solid Green;
+    border-bottom: 3px solid $light-color;
   }
 
   &__search {
     position: absolute;
-    color: white;
+    color: $light-color;
     font-size: 20px;
     right: 11px;
     top: 9px;
@@ -42,11 +42,11 @@
     border: none;
     outline: none;
     background-color: transparent;
-    color: white;
+    color: $light-color;
     font-size: 25px;
 
     &::placeholder {
-      color: white;
+      color: $light-color;
     }
   }
 }

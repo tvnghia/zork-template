@@ -4,19 +4,11 @@
   right: 0;
   top: 0;
   z-index: 999;
-  background-color: #fff;
+  background-color: $light-color;
   transition: all .5s;
 
   @include mediaquery--sm() {
     position: static;
-  }
-
-  &.is-active {
-    transform: translateY(-230px);
-
-    @include mediaquery--sm() {
-      transform: none;
-    }
   }
 
   .nav {
@@ -41,29 +33,27 @@
     }
   }
 
-  &__logo {
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    @include mediaquery--sm() {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  }
-
   &__cart {
     position: relative;
 
-    .counter {
+    .badge {
       position: absolute;
       width: 20px;
       height: 20px;
-      background: red;
+      background: $danger-color;
       right: -7px;
       top: -7px;
       border-radius: 100%;
-      color: whitesmoke;
+      color: $light-gray-color;
       line-height: 20px;
+    }
+  }
+
+  &.is-active {
+    transform: translateY(-230px);
+
+    @include mediaquery--sm() {
+      transform: none;
     }
   }
 }

@@ -1,6 +1,5 @@
 .headline {
   line-height: 1.25;
-  color: #25292C;
 
   &--xl {
     font-size: 40px;
@@ -15,6 +14,6 @@
   }
 
   &--gray {
-    color: gray;
+    color: $dark-color;
   }
 }

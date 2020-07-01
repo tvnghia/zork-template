@@ -38,7 +38,7 @@
       }
 
       &--bolddanger {
-        background-color: #B4666C;
+        background-color: $bold-danger-color;
       }
 
       &--warning {
@@ -46,7 +46,7 @@
       }
 
       &--boldwarning {
-        background-color: #ac9981;
+        background-color: $bold-warning-color;
       }
 
       &--blue {
@@ -54,11 +54,11 @@
       }
 
       &--boldblue {
-        background-color: #728090;
+        background-color: $bold-blue-color;
       }
 
       &__text {
-        color: seashell;
+        color: $light-gray-color;
       }
 
       &__icon {
@@ -66,6 +66,7 @@
         position: absolute;
         top: 18px;
         right: 18px;
+        color: $light-color;
       }
 
       &__image {

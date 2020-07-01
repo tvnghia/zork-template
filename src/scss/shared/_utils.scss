@@ -46,6 +46,11 @@
   padding-bottom: 50px;
 }
 
+.u-ptb-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .u-centered {
   @include flexbox(center, center);
 }
@@ -114,6 +119,10 @@
 
 .u-ml-40 {
   margin-left: 40px;
+}
+
+.u-ml-15 {
+  margin-left: 15px;
 }
 
 .u-leter-space {
