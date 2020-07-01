@@ -37,12 +37,12 @@ const countPrice = () => {
 
 export const handleCart = () => {
   const cardItem = [...document.querySelectorAll('.js-card-item')]
-  const counter = document.querySelector('.js-counter')
-  if (!cardItem.length || !counter) return
+  const badge = document.querySelector('.js-badge')
+  if (!cardItem.length || !badge) return
 
   cardItem.forEach(item => {
     item.querySelector('.js-btn-cart').addEventListener('click', e => {
-      counter.innerHTML++
+      badge.innerHTML++
 
       alert('Product added! Check in Cart!')
 
@@ -59,7 +59,7 @@ export const removeProduct = () => {
   const cart = document.querySelector('.js-cart')
   const noti = document.querySelector('.js-text-noti')
   const totalPrice = document.querySelector('.js-total-price')
-  const counter = document.querySelector('.js-counter')
+  const badge = document.querySelector('.js-badge')
 
   cart.addEventListener('click', e => {
     if (!e.target.classList.contains('js-btn-remove')) return
@@ -75,7 +75,7 @@ export const removeProduct = () => {
       noti.style.display = 'block'
       totalPrice.style.display = 'none'
     }
-    counter.innerHTML--
+    badge.innerHTML--
 
     countPrice()
   })

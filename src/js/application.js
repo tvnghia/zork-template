@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
   MenuMobile.toggleSubMenu()
 
   SlideImages.showSlides()
+
   Header.scrollPage()
   Header.searchBar()
   Header.closeModal()

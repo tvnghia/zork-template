@@ -10,12 +10,14 @@ export const scrollPage = () => {
 
 // Search icon bar
 export const searchBar = () => {
-  const searchIcon = document.querySelector('.js-search-icon')
+  const searchIconList = [...document.querySelectorAll('.js-search-icon')]
   const modal = document.querySelector('.js-modal')
-  if (!searchIcon && !modal) return
+  if (!searchIconList.length && !modal) return
 
-  searchIcon.addEventListener('click', () => {
-    modal.classList.add('is-active')
+  searchIconList.forEach(item => {
+    item.addEventListener('click', e => {
+      modal.classList.add('is-active')
+    })
   })
 }
 
