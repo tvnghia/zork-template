@@ -17,5 +17,6 @@ window.addEventListener('DOMContentLoaded', function () {
   Cart.handleCart()
   Cart.removeProduct()
 
-  HandleTabs.hover()
+  HandleTabs.hoverTabs()
+  HandleTabs.handleTabsLink()
 })

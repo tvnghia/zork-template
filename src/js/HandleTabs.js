@@ -1,19 +1,30 @@
-const selectedButton = tmp => {
-  const tab = document.querySelectorAll('.js-tab')
-  if (!tab) return
+const selectedButton = (tmp, className) => {
+  const tabs = document.querySelectorAll(`.${className}`)
+  if (!tabs) return
 
-  tab.forEach(item => {
+  tabs.forEach(item => {
     item.classList.remove('selected')
     tmp.classList.add('selected')
   })
 }
 
-export const hover = () => {
-  const tab = [...document.querySelectorAll('.js-tab')]
+export const hoverTabs = () => {
+  const tabs = [...document.querySelectorAll('.js-tab')]
 
-  tab.forEach(item => {
+  tabs.forEach(item => {
     item.addEventListener('mouseover', () => {
-      selectedButton(item)
+      selectedButton(item, 'js-tab')
+    })
+  })
+}
+
+export const handleTabsLink = () => {
+  const testList = [...document.querySelectorAll('.js-link-menu')]
+
+  testList.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault()
+      selectedButton(item, 'js-link-menu')
     })
   })
 }

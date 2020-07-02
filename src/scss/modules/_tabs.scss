@@ -60,3 +60,13 @@
     }
   }
 }
+
+.tab-link {
+  &.selected {
+    color: $danger-color;
+
+    .link__menu:after {
+      width: 100%;
+    }
+  }
+}
