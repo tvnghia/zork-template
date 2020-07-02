@@ -1,0 +1,62 @@
+.tab {
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 299px;
+    width: 800px;
+    height: 260px;
+    display: flex;
+    background-color: $light-color;
+    box-shadow: 0 3px 10px -2px #777;
+    background-attachment: scroll;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &__list > .link {
+    position: relative;
+  }
+
+  &__list:hover {
+    & > .link {
+      margin-left: 14px;
+      color: $danger-color;
+      transition: margin .5s;
+    }
+  }
+
+  & > &__list {
+    width: 25%;
+  }
+
+  &__feature {
+    position: absolute;
+    top: -18px;
+    left: 74px;
+    color: $light-color;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 1;
+
+    &--blue {
+      background-color: $blue-color;
+    }
+
+    &--danger {
+      background-color: $danger-color;
+    }
+  }
+
+  &.selected {
+    .tab__content {
+      display: flex;
+    }
+
+    .title {
+      color: $danger-color
+    }
+  }
+}
