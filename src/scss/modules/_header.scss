@@ -36,6 +36,11 @@
   &__cart {
     position: relative;
 
+    .cart-inner {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
     .badge {
       position: absolute;
       width: 20px;
