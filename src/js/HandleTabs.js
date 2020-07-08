@@ -22,14 +22,17 @@ export const hoverTabs = () => {
 }
 
 export const handleTabsLink = () => {
-  const testList = [...document.querySelectorAll('.js-link-menu')]
+  const menuLinkList = [...document.querySelectorAll('.js-link-menu')]
+  if (!menuLinkList) return
 
-  testList.forEach(item => {
+  menuLinkList.forEach(item => {
     item.addEventListener('click', e => {
       e.preventDefault()
       selectedButton(item, 'js-link-menu')
 
       const contentItem = document.querySelector(`.${item.dataset.tab}`)
+      if (!contentItem) return
+
       selectedButton(contentItem, 'js-tab-body')
     })
   })
