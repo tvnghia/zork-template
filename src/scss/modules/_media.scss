@@ -1,85 +1,50 @@
-.secsion-media {
-  padding-top: 295px;
+.media {
+  padding: 20px 10px;
 
-  @include mediaquery--sm() {
-    padding-top: 0px;
+  &--danger {
+    background-color: $light-danger-color;
   }
 
-  .wrapper-media {
-    position: relative;
-    transition: all .5s;
-
-    &:hover {
-      transform: translateY(-7px);
-
-      &:before {
-        opacity: 1;
-      }
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      height: 10px;
-      width: 90%;
-      left: 5%;
-      pointer-events: none;
-      background: radial-gradient(ellipse at center,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%);
-      transition: all 0.5s;
-      opacity: 0;
-    }
-
-    .media {
-      padding: 20px 10px;
-
-      &--danger {
-        background-color: $light-danger-color;
-      }
-
-      &--bolddanger {
-        background-color: $bold-danger-color;
-      }
-
-      &--warning {
-        background-color: $light-warning-color;
-      }
-
-      &--boldwarning {
-        background-color: $bold-warning-color;
-      }
-
-      &--blue {
-        background-color: $light-blue-color;
-      }
-
-      &--boldblue {
-        background-color: $bold-blue-color;
-      }
-
-      &__text {
-        color: $light-gray-color;
-      }
-
-      &__icon {
-        font-size: 25px;
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        color: $light-color;
-      }
-
-      &__image {
-        position: absolute;
-        right: 0;
-        width: 65px;
-        height: 65px;
-        top: 0;
-        text-align: center;
-        display: block;
-        z-index: 10;
-      }
-    }
+  &--bolddanger {
+    background-color: $bold-danger-color;
   }
 
+  &--warning {
+    background-color: $light-warning-color;
+  }
+
+  &--boldwarning {
+    background-color: $bold-warning-color;
+  }
+
+  &--blue {
+    background-color: $light-blue-color;
+  }
+
+  &--boldblue {
+    background-color: $bold-blue-color;
+  }
+
+  &__text {
+    color: $light-gray-color;
+  }
+
+  &__icon {
+    font-size: 25px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: $light-color;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 65px;
+    height: 65px;
+    top: 0;
+    text-align: center;
+    display: block;
+    z-index: 10;
+  }
 }

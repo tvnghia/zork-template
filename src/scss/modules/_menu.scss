@@ -7,7 +7,7 @@
   display: none;
   position: relative;
 
-  @include mediaquery--sm () {
+  @include mediaquery--md () {
     display: block;
   }
 

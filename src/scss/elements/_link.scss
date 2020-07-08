@@ -19,37 +19,9 @@
 
   &--dark {
     color: $dark-color;
-
-    &:hover {
-      color: $danger-color;
-    }
   }
 
   &--sm {
     font-size: 12px;
-  }
-
-  &__menu {
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      width: 0%;
-      margin: auto;
-      border-bottom: solid 1px $danger-color;
-      height: 1px;
-      transition: all .5s;
-      margin-top: 3px;
-    }
-
-    &:hover {
-      &:after {
-        width: 100%;
-      }
-    }
   }
 }

@@ -23,6 +23,18 @@
   }
 }
 
+@include mediaquery--xl() {
+  @for $i from 1 through $col-num {
+    .col--xl-#{$i} {
+      width: percentage($i / $col-num);
+    }
+
+    .col--xl-offset-#{$i} {
+      margin-left: percentage($i / $col-num);
+    }
+  }
+}
+
 @include mediaquery--md() {
   @for $i from 1 through $col-num {
     .col--md-#{$i} {

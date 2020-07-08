@@ -1,68 +1,50 @@
 .card {
-  &__item {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-      .card__icon,
-      .img-back {
-        opacity: 1;
-      }
+  &--horizontal {
+    display: flex;
+    position: relative;
 
-      .card__btn {
-        background-color: $danger-color;
-      }
-
-      .img-front {
-        opacity: 0;
-      }
-
-      .card__icon--left,
-      .card__icon--right {
-        transform: translateX(0px);
-      }
+    @include mediaquery--md() {
+      margin-bottom: 20px;
     }
+
+    @include mediaquery--sm() {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__btn-remove {
+    position: absolute;
+    right: 7px;
+    top: 34px;
+    color: $light-gray-color;
+  }
+
+  &__badge {
+    top: 10px;
+    left: 10px;
   }
 
   &__image {
     position: relative;
 
-    .img-back {
+    &--back {
       @include position(absolute);
       opacity: 0;
       transition: all 2s;
     }
   }
 
-  &__feature {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    text-align: center;
-    z-index: 20;
-
-    &--round {
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      background: $danger-color;
-      color: $light-color;
-      border-radius: 100%;
-    }
-  }
-
   &__icon {
     text-align: center;
     opacity: 0;
-    transition: all .8s;
-    z-index: 20;
-
-    &--center {
-      @include centered(50%, 50%);
-    }
+    transition: all .5s;
 
     &--left,
     &--right {
-      position: absolute;
       transition: all .5s;
     }
 
@@ -71,45 +53,42 @@
     }
 
     &--right {
-      top: 0;
-      right: 0;
       transform: translateX(5px);
     }
   }
 
   &__actions {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__btn {
-    border-radius: 20px;
-  }
-}
-
-.card-horizontal {
-  display: flex;
-  position: relative;
-
-  @include mediaquery--sm() {
-    flex-direction: column;
-    text-align: center;
+  &__btn-search {
+    @include centered(50%, 50%);
+    z-index: 20;
+    opacity: 0;
+    transition: all .5s;
   }
 
-  &__image {
-    @include mediaquery--sm() {
-      width: 100%;
+  &__item {
+    &:hover {
+      .card__icon,
+      .card__btn-search,
+      .card__image--back {
+        opacity: 1;
+      }
+
+      .card__btn {
+        background-color: $danger-color;
+      }
+
+      .card__image--front {
+        opacity: 0;
+      }
+
+      .card__icon--left,
+      .card__icon--right {
+        transform: translateX(0px);
+      }
     }
-  }
-
-  &__remove {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: $orange-color;
-    right: 7px;
-    top: 34px;
-    border-radius: 100%;
-    color: $light-gray-color;
-    line-height: 20px;
   }
 }

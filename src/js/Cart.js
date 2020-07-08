@@ -12,12 +12,12 @@ const getCart = (item) => {
   noti.style.display = 'none'
   totalPrice.style.display = 'block'
   const product = `
-    <div class="card-horizontal u-text-highlight u-mb-10 u-pb-10 js-product">
+    <div class="card card--horizontal u-text-highlight u-mb-10 u-pb-10 js-product">
       <img src="${item.querySelector('.js-img').src}" width="70" height="80" alt="">
       <div>
         <p class="u-prl-10 u-mb-10 u-text-bold-700">${item.querySelector('.js-product-name').innerHTML}</p>
         <small class="u-prl-10 js-product-price">${item.querySelector('.js-price').innerHTML}d</small>
-        <span data-btn="${item.querySelector('.js-btn-cart').dataset.id}" class="card-horizontal__remove u-text-centered js-btn-remove">X</span>
+        <btn data-btn="${item.querySelector('.js-btn-cart').dataset.id}" class="card__btn-remove btn btn--orange btn--circle u-text-centered js-btn-remove">X</btn>
       </div>
     </div>
   `

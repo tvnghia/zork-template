@@ -1,16 +1,17 @@
-.hero {
+.jumbotron {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-  min-height: 300px;
-
-  &--md {
-    min-height: 600px;
-  }
+  min-height: 500px;
 
   &__content {
-    @include centered(50%,50%);
+    @include centered(70%,50%);
+    width: 500px;
+
+    @include mediaquery--sm() {
+      width: 100%;
+    }
   }
 }

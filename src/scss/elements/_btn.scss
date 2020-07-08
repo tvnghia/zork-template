@@ -36,6 +36,14 @@
     }
   }
 
+  &--gray {
+    background-color: $gray-color;
+
+    &:hover {
+      background-color: $danger-color;
+    }
+  }
+
   &--radius {
     border-radius: 20px;
   }
@@ -50,9 +58,15 @@
 
   &--danger {
     background-color: $danger-color;
+    color: $light-color;
+  }
 
-    &:hover {
-      background-color: $light-gray-color;
-    }
+  &--orange {
+    background-color: $orange-color;
+  }
+
+  &--circle {
+    border-radius: 100%;
+    padding: 10px;
   }
 }

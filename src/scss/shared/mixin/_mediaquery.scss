@@ -10,6 +10,12 @@
   }
 }
 
+@mixin mediaquery--xl() {
+  @media (max-width: 1700px) {
+    @content
+  }
+}
+
 @mixin mediaquery--md() {
   @media (max-width: $sreen-tablet) {
     @content

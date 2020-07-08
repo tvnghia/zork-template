@@ -1,6 +1,5 @@
 const selectedButton = (tmp, className) => {
   const tabs = document.querySelectorAll(`.${className}`)
-  if (!tabs) return
 
   tabs.forEach(item => {
     item.classList.remove('selected')
@@ -10,10 +9,14 @@ const selectedButton = (tmp, className) => {
 
 export const hoverTabs = () => {
   const tabs = [...document.querySelectorAll('.js-tab')]
+  if (!tabs) return
 
   tabs.forEach(item => {
     item.addEventListener('mouseover', () => {
       selectedButton(item, 'js-tab')
+
+      const contentItem = document.querySelector(`.${item.dataset.tab}`)
+      selectedButton(contentItem, 'js-content')
     })
   })
 }
@@ -25,6 +28,9 @@ export const handleTabsLink = () => {
     item.addEventListener('click', e => {
       e.preventDefault()
       selectedButton(item, 'js-link-menu')
+
+      const contentItem = document.querySelector(`.${item.dataset.tab}`)
+      selectedButton(contentItem, 'js-tab-body')
     })
   })
 }

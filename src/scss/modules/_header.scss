@@ -7,22 +7,17 @@
   background-color: $light-color;
   transition: all .5s;
 
-  @include mediaquery--sm() {
+  @include mediaquery--md() {
     position: static;
   }
 
-  .nav {
-    &__item {
-      display: inline-block;
-    }
-
-    @include mediaquery--sm () {
-      display: none;
-    }
+  &__badge {
+    right: -7px;
+    top: -7px;
   }
 
   &__text {
-    @include mediaquery--sm () {
+    @include mediaquery--sm() {
       text-align: center !important;
     }
   }
@@ -40,24 +35,12 @@
       max-height: 400px;
       overflow-y: auto;
     }
-
-    .badge {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: $danger-color;
-      right: -7px;
-      top: -7px;
-      border-radius: 100%;
-      color: $light-gray-color;
-      line-height: 20px;
-    }
   }
 
   &.is-active {
     transform: translateY(-230px);
 
-    @include mediaquery--sm() {
+    @include mediaquery--md() {
       transform: none;
     }
   }

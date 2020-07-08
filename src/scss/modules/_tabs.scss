@@ -1,72 +1,89 @@
 .tab {
   &__content {
-    position: absolute;
-    top: 0;
-    left: 299px;
-    width: 800px;
-    height: 260px;
-    display: flex;
-    background-color: $light-color;
-    box-shadow: 0 3px 10px -2px #777;
+    width: 75%;
+    padding: 10px;
+    animation: fade 1s;
+
+    > .selected {
+      display: flex;
+      animation: fade 1s;
+    }
+  }
+
+  &__has-bg {
     background-attachment: scroll;
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto;
   }
 
-  &__list > .link {
-    position: relative;
-  }
-
-  &__list:hover {
-    & > .link {
-      margin-left: 14px;
-      color: $danger-color;
-      transition: margin .5s;
-    }
-  }
-
-  & > &__list {
+  &__control {
     width: 25%;
+    border-right: solid 1px $gray-color;
   }
 
-  &__feature {
-    position: absolute;
-    top: -18px;
-    left: 74px;
-    color: $light-color;
-    padding: 1px 5px;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 1.5;
-    z-index: 1;
+  &__list {
+    padding: 10px 5px;
 
-    &--blue {
-      background-color: $blue-color;
-    }
-
-    &--danger {
-      background-color: $danger-color;
+    &.selected {
+      .tab__title {
+        color: $danger-color;
+        margin-left: 10px;
+        transition: margin .5s;
+      }
     }
   }
 
-  &.selected {
-    .tab__content {
-      display: flex;
-    }
+  &__link {
+    position: relative;
 
-    .title {
-      color: $danger-color
+    &:hover {
+      margin-left: 15px;
+      transition: all 0.2s;
     }
   }
-}
 
-.tab-link {
-  &.selected {
-    color: $danger-color;
+  &__badge {
+    padding: 0 6px;
+    bottom: 6px;
+  }
 
-    .link__menu:after {
-      width: 100%;
+  &__link-menu {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 0%;
+      margin: auto;
+      border-bottom: solid 1px $danger-color;
+      height: 1px;
+      transition: all .5s;
+      margin-top: 3px;
     }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    &.selected {
+      color: $danger-color;
+
+      .tab__link-menu:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__body > .selected {
+    display: block;
+    animation: fade 1s;
   }
 }

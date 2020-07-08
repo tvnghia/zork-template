@@ -1,5 +1,13 @@
 .image {
-  overflow: hidden;
+  &--hidden-scroll {
+    overflow: hidden;
+  }
+
+  &--xxl {
+    @include mediaquery--sm() {
+      width: 1600px;
+    }
+  }
 
   &__item {
     display: block;
@@ -11,14 +19,8 @@
       opacity: .8;
     }
   }
-}
 
-.images {
   &__branch {
     width: 20%;
-
-    @include mediaquery--sm() {
-      width: 100%;
-    }
   }
 }

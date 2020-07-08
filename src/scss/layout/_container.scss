@@ -12,6 +12,11 @@
     width: 700px;
   }
 
+  &--not-pd {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   @include mediaquery--not-lg() {
     padding-left: $col-gutter;
     padding-right: $col-gutter;
