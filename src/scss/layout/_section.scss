@@ -1,0 +1,9 @@
+.section {
+  &--xl > .container {
+    padding-bottom: 64px;
+
+    @include mediaquery--md() {
+      padding-bottom: 30px;
+    }
+  }
+}
