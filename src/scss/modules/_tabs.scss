@@ -1,4 +1,11 @@
 .tab {
+  &--has-bg {
+    background-attachment: scroll;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
   &__content {
     width: 75%;
     padding: 10px;
@@ -8,13 +15,6 @@
       display: flex;
       animation: fade 1s;
     }
-  }
-
-  &__has-bg {
-    background-attachment: scroll;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: auto;
   }
 
   &__control {
@@ -83,7 +83,7 @@
   }
 
   &__body > .selected {
-    display: block;
+    display: flex;
     animation: fade 1s;
   }
 }

@@ -1,7 +1,9 @@
 .main {
-  padding-top: 295px;
+  & > [class^='section']:first-of-type {
+    padding-top: 293px;
 
-  @include mediaquery--md() {
-    padding-top: 0px;
+    @include mediaquery--md() {
+      padding-top: 0px;
+    }
   }
 }

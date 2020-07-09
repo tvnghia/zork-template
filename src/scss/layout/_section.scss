@@ -6,4 +6,16 @@
       padding-bottom: 30px;
     }
   }
+
+  &--md > .container {
+    padding-bottom: 25px;
+
+    @include mediaquery--md() {
+      padding-bottom: 15px;
+    }
+  }
+
+  &--xs > .container {
+    padding-bottom: 10px;
+  }
 }
