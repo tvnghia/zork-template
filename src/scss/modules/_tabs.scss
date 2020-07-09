@@ -1,9 +1,6 @@
 .tab {
   &--has-bg {
-    background-attachment: scroll;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: auto;
+    @include img-background();
   }
 
   &__content {
@@ -48,16 +45,13 @@
     bottom: 6px;
   }
 
-  &__link-menu {
+  &__link-text {
     position: relative;
 
     &:after {
+      @include position(absolute, 100%, 0, 0, 0);
       content: '';
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      width: 0%;
+      width: 0;
       margin: auto;
       border-bottom: solid 1px $danger-color;
       height: 1px;
@@ -76,7 +70,7 @@
     &.selected {
       color: $danger-color;
 
-      .tab__link-menu:after {
+      .tab__link-text:after {
         width: 100%;
       }
     }

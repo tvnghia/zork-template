@@ -1,18 +1,11 @@
 .nav {
-  width: 1170px;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-
   &__item {
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px;
 
-    &:hover {
-      .nav__menu:after {
-        width: 100%;
-      }
+    &:hover .nav__menu:after {
+      width: 100%;
     }
   }
 

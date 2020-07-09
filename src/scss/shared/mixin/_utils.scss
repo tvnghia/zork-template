@@ -12,16 +12,16 @@
 }
 
 @mixin img-background () {
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: scroll;
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
-@mixin position($position) {
+@mixin position($position, $t, $r, $b, $l) {
   position: $position;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
+  left: $l;
+  bottom: $b;
+  right: $r;
+  top: $t;
 }

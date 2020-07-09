@@ -1,6 +1,10 @@
 .slideshow {
   position: relative;
 
+  &__fade {
+    animation: fade 1.5s;
+  }
+
   &__dots {
     @include centered(50%, 95%)
   }
@@ -17,9 +21,5 @@
     &.is-active {
       background-color: $dark-color;
     }
-  }
-
-  &__fade {
-    animation: fade 1.5s;
   }
 }

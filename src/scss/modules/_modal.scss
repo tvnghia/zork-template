@@ -1,13 +1,13 @@
 .modal {
-  @include position(fixed);
+  @include position(fixed, 0, 0, 0, 0);
   display: none;
   padding: 20px;
   z-index: 1000;
-  opacity: 0.95;
+  opacity: .95;
 
   &:before {
-    @include position(absolute);
-    content: "";
+    @include position(absolute, 0, 0, 0, 0);
+    content: '';
     display: block;
     background: $dark-color;
     z-index: -1;
@@ -45,8 +45,6 @@
   }
 
   &.is-active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(center, center)
   }
 }
