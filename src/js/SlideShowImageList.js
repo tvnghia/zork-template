@@ -1,8 +1,9 @@
 // Slide auto show image
 let init = 0
 export const showSlides = () => {
-  const slides = [...document.querySelectorAll('.mySlides')]
+  const slides = [...document.querySelectorAll('.slideshow__fade')]
   const dots = [...document.querySelectorAll('.slideshow__dot')]
+  if (!slides.length || !dots.length) return
 
   slides.forEach(item => {
     item.style.display = 'none'
