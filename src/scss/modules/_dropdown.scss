@@ -2,17 +2,17 @@
   position: relative;
   cursor: pointer;
 
+  &:hover >
+    &__content {
+      display: block;
+    }
+
+    &__content--tranform {
+      animation: tranform .5s;
+    }
+
   &--static {
     position: static;
-  }
-
-  &:hover > &__content {
-    display: block;
-  }
-
-  &:hover > &__content--tranform {
-    animation-name: tranform;
-    animation-duration: .5s;
   }
 
   &__content {
@@ -20,10 +20,9 @@
     top: 100%;
     text-align: left;
     background-color: $light-color;
-    border-top: 1px solid $light-gray-color;
-    border-right: 1px solid $light-gray-color;
-    border-left: 1px solid $light-gray-color;
-    box-shadow: 0 3px 10px -2px #777;
+    border: 1px solid $light-gray-color;
+    border-bottom: none;
+    box-shadow: 0 3px 10px -2px $shadow-color;
     display: none;
     z-index: 300;
 
@@ -54,7 +53,8 @@
 
     &--horizontal {
       top: 0;
-      left: 198px;
+      left: 100%;
+      right: auto;
     }
   }
 
@@ -62,12 +62,12 @@
     padding: 10px;
     color: $primary-color;
     cursor: pointer;
-    border-bottom: 0.1px solid $light-gray-color;
+    border-bottom: .1px solid $light-gray-color;
 
     &:hover {
       background-color: $light-gray-color;
 
-      & > .link {
+      > .link {
         margin-left: 14px;
         color: $danger-color;
         transition: margin .5s;
