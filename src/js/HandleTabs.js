@@ -33,7 +33,7 @@ export const handleTabsLink = () => {
       const contentItem = document.querySelector(`.${item.dataset.tab}`)
       if (!contentItem) return
 
-      selectedButton(contentItem, 'js-tab-body')
+      selectedButton(contentItem, 'js-row')
     })
   })
 }
