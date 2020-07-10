@@ -1,11 +1,13 @@
 .scroller {
-  @include mediaquery--sm() {
-    overflow-x: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  overflow-x: scroll;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  &__body {
+    width: 1170px;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
   }
 }

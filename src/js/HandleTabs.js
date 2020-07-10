@@ -1,9 +1,9 @@
-const selectedButton = (tmp, className) => {
-  const tabs = document.querySelectorAll(`.${className}`)
+export const selectedButton = (tmp, className) => {
+  const tabs = [...document.querySelectorAll(`.${className}`)]
 
   tabs.forEach(item => {
-    item.classList.remove('selected')
-    tmp.classList.add('selected')
+    item.classList.remove('is-selected')
+    tmp.classList.add('is-selected')
   })
 }
 

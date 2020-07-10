@@ -1,50 +1,14 @@
 .media {
-  padding: 20px 10px;
+  display: flex;
+  position: relative;
 
-  &--danger {
-    background-color: $light-danger-color;
+  @include mediaquery--md() {
+    margin-bottom: 20px;
   }
 
-  &--bolddanger {
-    background-color: $bold-danger-color;
-  }
-
-  &--warning {
-    background-color: $light-warning-color;
-  }
-
-  &--boldwarning {
-    background-color: $bold-warning-color;
-  }
-
-  &--blue {
-    background-color: $light-blue-color;
-  }
-
-  &--boldblue {
-    background-color: $bold-blue-color;
-  }
-
-  &__text {
-    color: $light-gray-color;
-  }
-
-  &__icon {
-    font-size: 25px;
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    color: $light-color;
-  }
-
-  &__image {
-    position: absolute;
-    right: 0;
-    width: 65px;
-    height: 65px;
-    top: 0;
+  @include mediaquery--sm() {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    display: block;
-    z-index: 10;
   }
 }

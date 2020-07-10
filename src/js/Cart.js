@@ -17,7 +17,7 @@ const getCart = (item) => {
       <div>
         <p class="u-prl-10 u-mb-10 u-text-bold-700">${item.querySelector('.js-product-name').innerHTML}</p>
         <small class="u-prl-10 js-product-price">${item.querySelector('.js-price').innerHTML}d</small>
-        <btn data-btn="${item.querySelector('.js-btn-cart').dataset.id}" class="card__btn-remove btn btn--orange btn--circle u-text-centered js-btn-remove">X</btn>
+        <btn data-btn="${item.querySelector('.js-btn-cart').dataset.id}" class="card__action--right btn btn--orange btn--circle u-text-centered js-btn-remove">X</btn>
       </div>
     </div>
   `
@@ -36,7 +36,7 @@ const countPrice = () => {
 }
 
 export const handleCart = () => {
-  const cardItem = [...document.querySelectorAll('.js-card-item')]
+  const cardItem = [...document.querySelectorAll('.js-card')]
   const badge = document.querySelector('.js-badge')
   if (!cardItem.length || !badge) return
 

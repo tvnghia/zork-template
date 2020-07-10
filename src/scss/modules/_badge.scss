@@ -1,7 +1,10 @@
 .badge {
-  position: absolute;
   z-index: 20;
   text-align: center;
+
+  &--absolute {
+    position: absolute;
+  }
 
   &--danger {
     background: $danger-color;

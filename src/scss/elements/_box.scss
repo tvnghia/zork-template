@@ -1,5 +1,7 @@
 .box {
   position: relative;
+  padding: 20px 10px;
+  margin-bottom: 5px;
   transition: all .5s;
 
   &:hover {
@@ -21,5 +23,49 @@
     background: radial-gradient(ellipse at center,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%);
     transition: all 0.5s;
     opacity: 0;
+  }
+
+  &--danger {
+    background-color: $light-danger-color;
+  }
+
+  &--warning {
+    background-color: $light-warning-color;
+  }
+
+  &--blue {
+    background-color: $light-blue-color;
+  }
+
+  &__text {
+    color: $light-gray-color;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    &--bolddanger {
+      background-color: $bold-danger-color;
+    }
+
+    &--boldwarning {
+      background-color: $bold-warning-color;
+    }
+
+    &--boldblue {
+      background-color: $bold-blue-color;
+    }
+  }
+
+  &__icon-inner {
+    font-size: 25px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: $light-color;
   }
 }

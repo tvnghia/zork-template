@@ -1,4 +1,4 @@
-.menu {
+.collapse {
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -11,7 +11,7 @@
     display: block;
   }
 
-  &__dropdown {
+  &__content {
     position: relative;
     width: 100%;
     right: 0;
@@ -29,82 +29,77 @@
     }
   }
 
-  &__collapse {
+  &__action {
     width: 30px;
     height: 30px;
     position: relative;
     vertical-align: middle;
 
-    span {
+    &--inner {
+      @include position(absolute, 0, 0, 0, 0);
       display: block;
-      position: absolute;
       height: 2px;
       width: 70%;
       background: $light-color;
       margin: auto;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       transition: background .3s;
 
       &:before {
-        content: "";
-        position: absolute;
+        @include position(absolute, 7px, 0, auto, 0);
+        content: '';
         height: 2px;
         width: 100%;
         background: $light-color;
         margin: auto;
-        top: 7px;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        transition: all .3s;
         transform-origin: bottom left;
+        transition: all .3s;
       }
 
       &:after {
-        content: "";
-        position: absolute;
+        @include position(absolute, -7px, 0, auto, 0);
+        content: '';
         height: 2px;
         width: 100%;
         background: $light-color;
         margin: auto;
-        top: -7px;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        transition: all .3s;
         transform-origin: top left;
+        transition: all .3s;
       }
     }
 
     &.is-active {
-      span {
+      .collapse__action--inner {
         background: 0 0;
       }
 
-      span:before {
+      .collapse__action--inner:before {
         transform: rotate(-45deg);
       }
-      span:after {
+      .collapse__action--inner:after {
         transform: rotate(45deg);
-      }
-
-      & > .dropdown__content {
-        display: none;
       }
     }
   }
 
-  & > &__dropdown {
+  &__icon {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    transition: all .3s;
+
+    &.is-active {
+      transform: rotate(90deg);
+    }
+  }
+
+  & > &__content {
     max-height: 0;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
   }
 
   &.is-active {
-    & > .menu__dropdown {
+    & > .collapse__content {
       max-height: 1000px;
       transition: max-height 0.5s ease-in;
     }

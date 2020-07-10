@@ -75,7 +75,7 @@
         <div class="col-4 u-text-right">
           <div class="header__icons">
             <btn class="btn dropdown header__cart">
-              <span class="header__badge badge badge--danger badge--md badge--circle js-badge">0</span>
+              <span class="header__badge badge badge--absolute badge--danger badge--md badge--circle js-badge">0</span>
               <i class="fas fa-cart-plus u-text-xl"></i>
               <div class="dropdown__content dropdown__content--md  dropdown__content--is-right cart-inner u-pd-10 js-cart">
                 <p class="u-d-none js-total-price">SUBTOTAL: </p>
@@ -88,105 +88,168 @@
     </div>
 
     <div class="container">
-      <div class="menu js-menu">
+      <div class="collapse js-collapse">
         <div class="row u-space-between u-align-center">
           <div class="col-2">
-            <div class="menu__collapse u-ml-15 js-collapse">
-              <span></span>
+            <div class="collapse__action u-ml-15 js-collapse-action">
+              <span class="collapse__action--inner"></span>
             </div>
           </div>
 
           <div class="col-8">
-            <p class="menu__text">MENU</p>
+            <p>MENU</p>
           </div>
           <div class="col-2">
             <a class="link link--primary js-search-icon" href="#"><i class="fas fa-search"></i></a>
           </div>
         </div>
 
-        <ul class="menu__dropdown">
-          <li class="menu__dropdown-item menu js-menu-item">
-            <a class="link link--light" href="#">Home</a>
+        <ul class="collapse__content">
+          <li class="collapse collapse__content-item js-collapse-item">
+            <a class="link link--light" href="#">
+              Home
+              <i class="fas fa-angle-right collapse__icon u-text-right js-collapse-icon"></i>
+            </a>
 
-            <ul class="menu__dropdown">
-              <li class="menu__dropdown-item">
+            <ul class="collapse__content">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Home</a>
+                <a class="link link--light" href="#">
+                  sub Home
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Pages</a>
+                <a class="link link--light" href="#">
+                  sub Pages
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Shops</a>
+                <a class="link link--light" href="#">
+                  sub Shops
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Products</a>
+                <a class="link link--light" href="#">
+                  sub Products
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Categories</a>
+                <a class="link link--light" href="#">
+                  sub Categories
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Shortcode</a>
+                <a class="link link--light" href="#">
+                  sub Shortcode
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Blog</a>
+                <a class="link link--light" href="#">
+                  sub Blog
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
             </ul>
           </li>
-          <li class="menu__dropdown-item menu js-menu-item">
-            <a class="link link--light" href="#">Pages</a>
+          <li class="collapse__content-item collapse js-collapse-item">
+            <a class="link link--light" href="#">
+              Pages
+            </a>
+            <i class="fas fa-angle-right collapse__icon u-text-right js-collapse-icon"></i>
 
-            <ul class="menu__dropdown">
-              <li class="menu__dropdown-item">
+            <ul class="collapse__content">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Home</a>
+                <a class="link link--light" href="#">
+                  sub Home
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Pages</a>
+                <a class="link link--light" href="#">
+                  sub Pages
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Shops</a>
+                <a class="link link--light" href="#">
+                  sub Shops
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Products</a>
+                <a class="link link--light" href="#">
+                  sub Products
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Categories</a>
+                <a class="link link--light" href="#">
+                  sub Categories
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Shortcode</a>
+                <a class="link link--light" href="#">
+                  sub Shortcode
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
-              <li class="menu__dropdown-item">
+              <li class="collapse__content-item">
                 <i class="fa fa-star"></i>
-                <a class="link link--light" href="#">sub Blog</a>
+                <a class="link link--light" href="#">
+                  sub Blog
+                  <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+                </a>
               </li>
             </ul>
           </li>
-          <li class="menu__dropdown-item">
-            <a class="link link--light" href="#">Shops</a>
+          <li class="collapse__content-item">
+            <a class="link link--light" href="#">
+              Shops
+              <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+            </a>
           </li>
-          <li class="menu__dropdown-item">
-            <a class="link link--light" href="#">Products</a>
+          <li class="collapse__content-item">
+            <a class="link link--light" href="#">
+              Products
+              <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+            </a>
           </li>
-          <li class="menu__dropdown-item">
-            <a class="link link--light" href="#">Categories</a>
+          <li class="collapse__content-item">
+            <a class="link link--light" href="#">
+              Categories
+              <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+            </a>
           </li>
-          <li class="menu__dropdown-item">
-            <a class="link link--light" href="#">Shortcode</a>
+          <li class="collapse__content-item">
+            <a class="link link--light" href="#">
+              Shortcode
+              <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+            </a>
           </li>
-          <li class="menu__dropdown-item">
-            <a class="link link--light" href="#">Blog</a>
+          <li class="collapse__content-item">
+            <a class="link link--light" href="#">
+              Blog
+              <i class="fas fa-angle-right collapse__icon u-text-right"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -200,8 +263,8 @@
           </li>
 
           <li class="nav__item dropdown">
-            <a class="link link--dark nav__page u-mrl-20" href="#">
-              <span class="nav__menu">PAGES</span>
+            <a class="link link--dark u-mrl-20" href="#">
+              <span class="nav__text">PAGES</span>
               <i class="fas fa-caret-down"></i>
             </a>
 
@@ -265,14 +328,14 @@
 
           <li class="nav__item dropdown dropdown--static">
             <a class="link link--dark u-mrl-20" href="#">
-              <span class="nav__menu">SHOP</span>
+              <span class="nav__text">SHOP</span>
               <i class="fas fa-caret-down"></i>
             </a>
 
             <div class="dropdown__content dropdown__content--tranform dropdown__content--lg dropdown__content--is-left">
               <div class="tab u-d-flex">
                 <ul class="tab__control">
-                  <li data-tab="js-main" class="tab__list js-tab selected">
+                  <li data-tab="js-main" class="tab__list js-tab is-selected">
                     <h3 class="tab__title u-text-bold-700">
                       <i class="far fa-star"></i>
                       MAIN SHOP
@@ -296,7 +359,7 @@
                 </ul>
 
                 <div class="tab__content">
-                  <div class="u-d-none selected tab--has-bg js-content js-main" style="background-image: url(./images/img-bg-dropdown.png);">
+                  <div class="u-d-none is-selected has-bg js-content js-main" style="background-image: url(./images/img-bg-dropdown.png);">
                     <div>
                       <img src="./images/img-product-1.1.jpg" width="195" alt="product">
                       <p class="u-text-centered">FARLAP SHIRT – RUBY WINES</p>
@@ -384,7 +447,7 @@
                       <li class="u-mb-10">
                         <a class="link tab__link">
                           CATEGORIES
-                          <span class="tab__badge badge badge--blue">New</span>
+                          <span class="tab__badge badge badge--absolute badge--blue">New</span>
                         </a>
                       </li>
                       <li class="u-mb-10">
@@ -405,7 +468,7 @@
                       <li class="u-mb-10">
                         <a class="link tab__link">
                           ORDER
-                          <span class="tab__badge badge badge--danger">Hot</span>
+                          <span class="tab__badge badge badge--absolute badge--danger">Hot</span>
                         </a>
                       </li>
                       <li class="u-mb-10">
@@ -432,22 +495,22 @@
           </li>
           <li class="nav__item">
             <a class="link link--dark u-mrl-20" href="#">
-              <span class="nav__menu">PRODUCTS</span>
+              <span class="nav__text">PRODUCTS</span>
             </a>
           </li>
           <li class="nav__item">
             <a class="link link--dark u-mrl-20" href="#">
-              <span class="nav__menu">CATEGORIES</span>
+              <span class="nav__text">CATEGORIES</span>
             </a>
           </li>
           <li class="nav__item">
             <a class="link link--dark u-mrl-20" href="#">
-              <span class="nav__menu">SHOERCODE</span>
+              <span class="nav__text">SHOERCODE</span>
             </a>
           </li>
           <li class="nav__item">
             <a class="link link--dark u-mrl-20" href="#">
-              <span class="nav__menu">BLOGS</span>
+              <span class="nav__text">BLOGS</span>
             </a>
           </li>
           <li class="nav__item js-search-icon">
@@ -472,33 +535,37 @@
       <div class="container">
         <div class="row u-space-between">
           <div class="col-4 col--md-12">
-            <div class="box">
-              <div class="media media--danger u-d-flex u-space-between u-mb-10">
-                <p class="media__text u-text-bold-700">FREE SHIPPING</p>
-                <div class="media__image media--bolddanger">
-                  <i class="media__icon fas fa-shopping-cart"></i>
+            <div class="box box--danger">
+              <div class="box__content">
+                <p class="box__text u-text-bold-700">FREE SHIPPING</p>
+
+                <div class="box__icon">
+                  <i class="box__icon-inner fas fa-shopping-cart"></i>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-4 col--md-12">
-            <div class="box">
-              <div class="media media--warning u-d-flex u-space-between u-mb-10">
-                <p class="media__text u-text-bold-700">GIVEAWAY EVERYWEEK</p>
-                <div class="media__image media--boldwarning">
-                  <i class="media__icon fas fa-shopping-cart"></i>
+            <div class="box box--warning">
+              <div class="box__content">
+                <p class="box__text u-text-bold-700">GIVEAWAY EVERYWEEK</p>
+
+                <div class="box__icon box__icon--boldwarning">
+                  <i class="box__icon-inner fas fa-shopping-cart"></i>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-4 col--md-12">
-            <div class="box">
-              <div class="media media--blue u-d-flex u-space-between u-mb-10">
-                <p class="media__text u-text-bold-700">SALE UP TO 70%</p>
-                <div class="media__image media--boldblue">
-                  <i class="media__icon fas fa-shopping-cart"></i>
+            <div class="box box--blue">
+
+              <div class="box__content">
+                <p class="box__text u-text-bold-700">SALE UP TO 7%</p>
+
+                <div class="box__icon box__icon--boldblue">
+                  <i class="box__icon-inner fas fa-shopping-cart"></i>
                 </div>
               </div>
             </div>
@@ -511,22 +578,22 @@
       <div class="container">
         <div class="slideshow">
 
-          <div class="slideshow__fade">
+          <div class="slideshow__fade js-img-1 js-fade">
             <img src="http://themes.g5plus.net/zorka/wp-content/uploads/2015/03/slider-03-2.jpg" style="width:100%">
           </div>
 
-          <div class="slideshow__fade">
+          <div class="slideshow__fade js-img-2 js-fade">
             <img src="http://themes.g5plus.net/zorka/wp-content/uploads/2015/03/slider-03-3.jpg" style="width:100%">
           </div>
 
-          <div class="slideshow__fade">
+          <div class="slideshow__fade js-img-3 js-fade">
             <img src="http://themes.g5plus.net/zorka/wp-content/uploads/2015/03/slider-03-1.jpg" style="width:100%">
           </div>
 
           <div class="slideshow__dots">
-            <span class="slideshow__dot js-dot"></span>
-            <span class="slideshow__dot js-dot"></span>
-            <span class="slideshow__dot js-dot"></span>
+            <span data-img="js-img-1" class="slideshow__dot js-dot"></span>
+            <span data-img="js-img-2" class="slideshow__dot js-dot"></span>
+            <span data-img="js-img-3" class="slideshow__dot js-dot"></span>
           </div>
         </div>
       </div>
@@ -559,25 +626,25 @@
       <div class="container container--md">
         <div class="row">
           <div class="col-3 col--sm-12 u-text-centered">
-            <a data-tab="js-hoodies" class="link link--dark tab__menu u-mrl-20 u-text-bold-700 js-link-menu selected" href="">
+            <a data-tab="js-hoodies" class="link link--dark tab__item u-mrl-20 u-text-bold-700 js-link-menu is-selected" href="">
               <span class="tab__link-text">HOODIES</span>
             </a>
           </div>
 
           <div class="col-3 col--sm-12 u-text-centered">
-            <a data-tab="js-posters" class="link link--dark tab__menu u-mrl-20 u-text-bold-700 js-link-menu" href="">
+            <a data-tab="js-posters" class="link link--dark tab__item u-mrl-20 u-text-bold-700 js-link-menu" href="">
               <span class="tab__link-text">POSTERS</span>
             </a>
           </div>
 
           <div class="col-3 col--sm-12 u-text-centered">
-            <a data-tab="js-singles" class="link link--dark tab__menu u-mrl-20 u-text-bold-700 js-link-menu" href="">
+            <a data-tab="js-singles" class="link link--dark tab__item u-mrl-20 u-text-bold-700 js-link-menu" href="">
               <span class="tab__link-text">SINGLES</span>
             </a>
           </div>
 
           <div class="col-3 col--sm-12 u-text-centered">
-            <a data-tab="js-shirt" class="link link--dark tab__menu u-mrl-20 u-text-bold-700 js-link-menu" href="">
+            <a data-tab="js-shirt" class="link link--dark tab__item u-mrl-20 u-text-bold-700 js-link-menu" href="">
               <span class="tab__link-text">T_SHIRTS</span>
             </a>
           </div>
@@ -585,55 +652,53 @@
       </div>
 
       <div class="container tab__body">
-        <div class="row js-hoodies js-row u-d-none selected">
+        <div class="row js-hoodies js-row u-d-none is-selected">
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">LAPTOP BAGS</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--back">
+                  <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">LAPTOP BAGS</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div>
+                  <del>99.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
 
-                  <div>
-                    <del>99.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
+                  <button data-id="1" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
-
-                    <button data-id="1" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -641,50 +706,48 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">CLOTHES</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="2" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">CLOTHES</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="2" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -692,50 +755,48 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">BEN && TOD</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="3" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">BEN && TOD</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="3" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -743,51 +804,49 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">ROUTINEEEE FASHION</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">ROUTINEEEE FASHION</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>200.000</del>
+                  <span class="u-text-danger js-price">110000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
-                  <div>
-                    <del>200.000</del>
-                    <span class="u-text-danger js-price">110000</span>
-                  </div>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                  <button data-id="4" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                    <button data-id="4" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -797,53 +856,51 @@
 
         <div class="row js-posters js-row u-d-none">
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">LAPTOP BAGS</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--back">
+                  <img src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">LAPTOP BAGS</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div>
+                  <del>99.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
 
-                  <div>
-                    <del>99.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
+                  <button data-id="1" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
-
-                    <button data-id="1" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -851,50 +908,48 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">CLOTHES</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="2" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">CLOTHES</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="2" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -902,50 +957,48 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">BEN && TOD</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="3" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">BEN && TOD</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="3" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -953,51 +1006,49 @@
           </div>
 
           <div class="col-3 col--md-6 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">ROUTINEEEE FASHION</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">ROUTINEEEE FASHION</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>200.000</del>
+                  <span class="u-text-danger js-price">110000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
-                  <div>
-                    <del>200.000</del>
-                    <span class="u-text-danger js-price">110000</span>
-                  </div>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                  <button data-id="4" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                    <button data-id="4" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1049,50 +1100,48 @@
       <div class="container container--fluid">
         <div class="row">
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">KATHUS BOY</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>99.000</del>
-                    <span class="u-text-danger js-price">49000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="5" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">KATHUS BOY</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>99.000</del>
+                  <span class="u-text-danger js-price">49000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="5" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1100,50 +1149,48 @@
           </div>
 
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">YOUR SHOP</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="6" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">YOUR SHOP</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="6" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1151,50 +1198,48 @@
           </div>
 
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">ENGLAND FASHION</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
 
-                    <button data-id="7" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
 
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">ENGLAND FASHION</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
+                  </div>
+
+                  <button data-id="7" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
+
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1202,51 +1247,49 @@
           </div>
 
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">NEW FASHION</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">NEW FASHION</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                  <button data-id="8" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                    <button data-id="8" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1254,51 +1297,49 @@
           </div>
 
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">BAD BOY SHOP</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">BAD BOY SHOP</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                  <button data-id="9" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                    <button data-id="9" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1306,51 +1347,49 @@
           </div>
 
           <div class="col-2 col--md-6 col--xl-4 col--sm-12">
-            <div class="card">
-              <div class="card__item u-mb-24 js-card-item">
-                <div class="card__image">
-                  <span class="card__badge badge badge--circle badge--danger badge--lg">-50%</span>
+            <div class="card js-card">
+              <div class="card__image">
+                <span class="card__badge badge badge--absolute badge--circle badge--danger badge--lg">-50%</span>
 
-                  <div class="card__btn-search">
-                    <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
-                  </div>
-
-                  <div class="card__image--front">
-                    <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
-
-                  <div class="card__image--back">
-                    <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
-                  </div>
+                <div class="card__action--center">
+                  <button class="btn btn--circle btn--danger"><i class="fas fa-search"></i></button>
                 </div>
 
-                <div class="card__content u-text-centered">
-                  <p><a class="link link--primary u-border-bot js-product-name" href="#">GIRL SHOPING</a></p>
-                  <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
-                  <div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card__image--front">
+                  <img class="js-img" src="./images/img-product-2.2.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+
+                <div class="card__image--back">
+                  <img src="./images/img-product-1.1.jpg" width="100%" height="520" alt="thumnail">
+                </div>
+              </div>
+
+              <div class="card__content u-text-centered">
+                <p><a class="link link--primary u-border-bot js-product-name" href="#">GIRL SHOPING</a></p>
+                <p><a class="link link--primary" href="#">Veston for bussiness</a></p>
+                <div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <del>100.000</del>
+                  <span class="u-text-danger js-price">50000</span>
+                </div>
+
+                <div class="card__actions">
+                  <div class="card__icon card__icon--left">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
                   </div>
-                  <div>
-                    <del>100.000</del>
-                    <span class="u-text-danger js-price">50000</span>
-                  </div>
 
-                  <div class="card__actions">
-                    <div class="card__icon card__icon--left">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-heart"></i></button>
-                    </div>
+                  <button data-id="10" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
+                    ADD TO CART
+                  </button>
 
-                    <button data-id="10" class="btn btn--primary btn--radius card__btn btn--lg js-btn-cart">
-                      ADD TO CART
-                    </button>
-
-                    <div class="card__icon card__icon--right">
-                      <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
-                    </div>
+                  <div class="card__icon card__icon--right">
+                    <button class="btn btn--circle btn--danger"><i class="fas fa-compress-arrows-alt"></i></button>
                   </div>
                 </div>
               </div>
@@ -1384,7 +1423,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6 col--md-12 col--sm-12">
-            <div class="card card--horizontal">
+            <div class="media">
               <img src="./images/img-blog-1.jpg" style="width: 230px; height: 170px" alt="blog1">
 
               <div class="u-prl-10">
@@ -1399,7 +1438,7 @@
           </div>
 
           <div class="col-6 col--md-12 col--sm-12">
-            <div class="card card--horizontal">
+            <div class="media">
               <img src="./images/img-blog-2.jpg" style="width: 230px; height: 170px" alt="blog2">
 
               <div class="u-prl-10">
@@ -1417,25 +1456,16 @@
 
       <div class="container">
         <div class="scroller">
-          <div class="row image image--xxl">
-            <div class="image__branch u-text-centered">
-              <img src="./images/img-brand-1.png" alt="branch">
-            </div>
-            <div class="image__branch u-text-centered">
-              <img src="./images/img-brand-2.png" alt="branch">
-            </div>
-            <div class="image__branch u-text-centered">
-              <img src="./images/img-brand-3.png" alt="branch">
-            </div>
-            <div class="image__branch u-text-centered">
-              <img src="./images/img-brand-4.png" alt="branch">
-            </div>
-            <div class="image__branch u-text-centered">
-              <img src="./images/img-brand-5.png" alt="branch">
-            </div>
-          </div>
+          <ul class="scroller__body">
+            <li class="scroller__item"><img src="./images/img-brand-1.png" alt="branch"></li>
+            <li class="scroller__item"><img src="./images/img-brand-2.png" alt="branch"></li>
+            <li class="scroller__item"><img src="./images/img-brand-3.png" alt="branch"></li>
+            <li class="scroller__item"><img src="./images/img-brand-4.png" alt="branch"></li>
+            <li class="scroller__item"><img src="./images/img-brand-5.png" alt="branch"></li>
+          </ul>
         </div>
       </div>
+
     </section>
   </main>
 

@@ -3,12 +3,6 @@
     overflow: hidden;
   }
 
-  &--xxl {
-    @include mediaquery--sm() {
-      width: 1600px;
-    }
-  }
-
   &__item {
     display: block;
     width: 100%;
@@ -18,9 +12,5 @@
       transform: scale(1.2);
       opacity: .8;
     }
-  }
-
-  &__branch {
-    width: 20%;
   }
 }

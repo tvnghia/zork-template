@@ -2,8 +2,8 @@
   @include position(fixed, 0, 0, 0, 0);
   display: none;
   padding: 20px;
-  z-index: 1000;
   opacity: .95;
+  z-index: 1000;
 
   &:before {
     @include position(absolute, 0, 0, 0, 0);
@@ -21,11 +21,9 @@
   }
 
   &__search {
-    position: absolute;
+    @include position(absolute, 9px, 11px, auto, auto);
     color: $light-color;
     font-size: 20px;
-    right: 11px;
-    top: 9px;
     cursor: pointer;
   }
 

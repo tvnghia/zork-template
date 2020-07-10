@@ -5,10 +5,11 @@ import * as Header from './Header'
 import * as HandleTabs from './HandleTabs'
 
 window.addEventListener('DOMContentLoaded', function () {
-  MenuMobile.toggleCollapseMenu()
-  MenuMobile.toggleSubMenu()
+  MenuMobile.toggleCollapse()
+  MenuMobile.toggleSubCollapse()
 
   SlideImages.showSlides()
+  SlideImages.test()
 
   Header.scrollPage()
   Header.searchBar()

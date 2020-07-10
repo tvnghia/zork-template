@@ -11,17 +11,17 @@
   align-items: $align;
 }
 
-@mixin img-background () {
-  background-attachment: scroll;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: auto;
+@mixin img-background($attachment, $positon, $repeat, $size) {
+  background-attachment: $attachment;
+  background-position: $positon;
+  background-repeat: $repeat;
+  background-size: $size;
 }
 
-@mixin position($position, $t, $r, $b, $l) {
+@mixin position($position, $top, $right, $bottom, $left) {
   position: $position;
-  left: $l;
-  bottom: $b;
-  right: $r;
-  top: $t;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  top: $top;
 }

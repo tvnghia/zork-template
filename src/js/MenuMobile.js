@@ -1,23 +1,24 @@
 // Buton Menu collapse in mobile device
-export const toggleCollapseMenu = () => {
-  const btnCollapse = document.querySelector('.js-collapse')
-  const menu = document.querySelector('.js-menu')
-  if (!menu || !btnCollapse) return
+export const toggleCollapse = () => {
+  const collapseAction = document.querySelector('.js-collapse-action')
+  const collapse = document.querySelector('.js-collapse')
+  if (!collapse || !collapseAction) return
 
-  btnCollapse.addEventListener('click', () => {
-    btnCollapse.classList.toggle('is-active')
-    menu.classList.toggle('is-active')
+  collapseAction.addEventListener('click', () => {
+    collapseAction.classList.toggle('is-active')
+    collapse.classList.toggle('is-active')
   })
 }
 
-// toggle submenu
-export const toggleSubMenu = () => {
-  const subMenu = [...document.querySelectorAll('.js-menu-item')]
-  if (!subMenu.length) return
+// toggle collapseItem
+export const toggleSubCollapse = () => {
+  const collapseItem = [...document.querySelectorAll('.js-collapse-item')]
+  if (!collapseItem.length) return
 
-  subMenu.forEach(item => {
+  collapseItem.forEach(item => {
     item.addEventListener('click', () => {
       item.classList.toggle('is-active')
+      item.querySelector('.js-collapse-icon').classList.toggle('is-active')
     })
   })
 }

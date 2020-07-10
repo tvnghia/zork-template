@@ -1,9 +1,6 @@
 .jumbotron {
+  @include img-background(scroll, center, no-repeat, cover);
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
   min-height: 500px;
 
   &__content {

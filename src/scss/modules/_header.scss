@@ -1,10 +1,7 @@
 .header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 999;
+  @include position(fixed, 0, 0, auto, 0);
   background-color: $light-color;
+  z-index: 999;
   transition: all .5s;
 
   @include mediaquery--md() {
@@ -42,6 +39,36 @@
 
     @include mediaquery--md() {
       transform: none;
+    }
+  }
+}
+
+.nav {
+  @include mediaquery--md () {
+    display: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:hover .nav__text:after {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    position: relative;
+
+    &:after {
+      @include position(absolute, 100%, 0, auto, 0);
+      content: '';
+      width: 0%;
+      height: 1px;
+      border-bottom: solid 1px $danger-color;
+      margin-top: 3px;
+      transition: all .5s;
     }
   }
 }
