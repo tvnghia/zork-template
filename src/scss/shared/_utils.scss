@@ -105,6 +105,10 @@
   align-items: center;
 }
 
+.u-border-gray {
+  border: 5px solid $gray-color;
+}
+
 .u-border-bot {
   border-bottom: 1px solid $dark-color;
 }

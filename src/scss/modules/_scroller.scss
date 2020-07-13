@@ -2,7 +2,9 @@
   overflow-x: scroll;
 
   &__body {
-    width: 1170px;
+    @include mediaquery--md() {
+      width: 1170px;
+    }
   }
 
   &__item {
