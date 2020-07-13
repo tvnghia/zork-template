@@ -8,7 +8,7 @@
       @include img-background(scroll, bottom right, no-repeat, auto);
     }
 
-    > .is-selected {
+    > .is-active {
       display: flex;
       animation: fade 1s;
     }
@@ -22,7 +22,7 @@
   &__list {
     padding: 10px 5px;
 
-    &.is-selected {
+    &.is-active {
       .tab__title {
         color: $danger-color;
         margin-left: 10px;
@@ -65,7 +65,7 @@
   }
 
   &__item {
-    &.is-selected {
+    &.is-active {
       color: $danger-color;
 
       .tab__link-text:after {
@@ -74,7 +74,7 @@
     }
   }
 
-  &__body > .is-selected {
+  &__body > .is-active {
     display: flex;
     animation: fade 1s;
   }

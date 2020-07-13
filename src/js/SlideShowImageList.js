@@ -3,32 +3,40 @@ import { selectedButton } from './HandleTabs'
 // Slide auto show image
 let init = 0
 export const showSlides = () => {
-  const slides = [...document.querySelectorAll('.js-fade')]
+  const imgFadeList = [...document.querySelectorAll('.js-img-fade')]
   const dots = [...document.querySelectorAll('.js-dot')]
-  if (!slides.length || !dots.length) return
+  if (!imgFadeList.length || !dots.length) return
 
-  slides.forEach(item => {
+  imgFadeList.forEach(item => {
     item.style.display = 'none'
   })
 
   init++
 
-  init > slides.length && (init = 1)
+  init > imgFadeList.length && (init = 1)
 
   dots.forEach(dot => {
     dot.classList.remove('is-active')
   })
 
-  slides[init - 1].style.display = 'block'
+  imgFadeList[init - 1].style.display = 'block'
   dots[init - 1].classList.add('is-active')
   setTimeout(showSlides, 2000)
 }
 
 export const test = () => {
   const dots = [...document.querySelectorAll('.js-dot')]
-  if (!dots.length) return
+  const imgFadeList = [...document.querySelectorAll('.js-img-fade')]
+  if (!imgFadeList.length || !dots.length) return
 
   dots.forEach(dot => {
-    selectedButton(dot, 'js-dot')
+    dot.addEventListener('click', e => {
+      imgFadeList.forEach(item => {
+        item.style.display = 'none'
+      })
+
+      document.querySelector(`.${e.target.dataset.img}`).style.display = 'block'
+      selectedButton(dot, 'js-dot')
+    })
   })
 }

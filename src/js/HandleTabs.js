@@ -2,8 +2,8 @@ export const selectedButton = (tmp, className) => {
   const tabs = [...document.querySelectorAll(`.${className}`)]
 
   tabs.forEach(item => {
-    item.classList.remove('is-selected')
-    tmp.classList.add('is-selected')
+    item.classList.remove('is-active')
+    tmp.classList.add('is-active')
   })
 }
 
