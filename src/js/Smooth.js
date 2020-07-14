@@ -24,7 +24,6 @@ export const scrollAnchor = () => {
 
   scrollElems.forEach(link => {
     link.addEventListener('click', e => {
-      console.log('xxx')
       e.preventDefault()
       const scrollElemId = e.target.href.split('#')[1]
       const scrollEndElem = document.getElementById(scrollElemId)
