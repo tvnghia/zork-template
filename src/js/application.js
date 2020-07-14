@@ -3,6 +3,8 @@ import * as MenuMobile from './MenuMobile'
 import * as SlideImages from './SlideShowImageList'
 import * as Header from './Header'
 import * as HandleTabs from './HandleTabs'
+import * as Smooth from './Smooth'
+import * as ScrollPage from './ScrollPage'
 
 window.addEventListener('DOMContentLoaded', function () {
   MenuMobile.toggleCollapse()
@@ -20,4 +22,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
   HandleTabs.hoverTabs()
   HandleTabs.handleTabsLink()
+
+  Smooth.scrollAnchor()
+
+  ScrollPage.scrollPage()
 })
