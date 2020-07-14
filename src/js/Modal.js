@@ -1,14 +1,4 @@
-// Scroll page
-export const scrollPage = () => {
-  window.onscroll = () => {
-    const header = document.querySelector('.js-header')
-    if (!header) return
-
-    window.pageYOffset >= 150 ? header.classList.add('is-active') : header.classList.remove('is-active')
-  }
-}
-
-// Search icon bar
+// Search icon bar to open modal
 export const searchBar = () => {
   const searchIconList = [...document.querySelectorAll('.js-search-icon')]
   const modal = document.querySelector('.js-modal')
